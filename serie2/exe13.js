@@ -6,7 +6,8 @@ function calculIMC(){
 	
 	var imc = poids/(taille * taille);
 
-	var imc_décimale = imc.toFixed(2)
+	var imc_décimale = imc.toFixed(2); //seulement les deux premières décimales
+	
 
 	switch(true){
 		case (imc_décimale < 16.5) :
