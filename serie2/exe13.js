@@ -7,7 +7,7 @@ function calculIMC(){
 	var imc = poids/(taille * taille);
 
 	var imc_décimale = imc.toFixed(2); //seulement les deux premières décimales
-	
+
 
 	switch(true){
 		case (imc_décimale < 16.5) :
@@ -34,7 +34,7 @@ function calculIMC(){
 			alert(imc_décimale + " Obésité sévère");
 			break;
 
-		case (imc_décimale > 40) :
+		case (imc_décimale >= 40) :
 			alert(imc_décimale + " Obésité morbide");
 			break; 
 
