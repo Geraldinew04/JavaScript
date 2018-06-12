@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Canvas</title>
+ </head>
+
+ <body>
+   <canvas id="belgium" width="700" height="600"></canvas>
+   <canvas id="germany" width="700" height="600"></canvas>
+
+   <script type="application/x-javascript">
+
+	var belgium = document.getElementById("belgium");
+	var ctx = belgium.getContext("2d");
+
+	ctx.beginPath();
+	ctx.fillStyle = "black";
+	ctx.fillRect(50,50,200,350);
+	ctx.fillStyle = "yellow";
+	ctx.fillRect(250,50,200,350);
+	ctx.fillStyle = "red";
+	ctx.fillRect(450,50,200,350);
+	ctx.closePath();
+
+
+	var germany = document.getElementById("germany");
+	var ctx2 = germany.getContext("2d");
+
+	ctx2.beginPath();
+	ctx2.fillStyle = "black";
+	ctx2.fillRect(50,50,550,100);
+	ctx2.fillStyle = "red";
+	ctx2.fillRect(50,150,550,100);
+	ctx2.fillStyle = "yellow";
+	ctx2.fillRect(50,250,550,100);
+	ctx2.closePath();
+
+		
+
+	</script>
+
+ </body>
+</html>
