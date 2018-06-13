@@ -5,40 +5,65 @@
 	<title>Canvas</title>
  </head>
 
- <body>
-   <canvas id="belgium" width="700" height="600"></canvas>
-   <canvas id="germany" width="700" height="600"></canvas>
+	<body>
+   		<canvas id="belgium" width="700" height="600"></canvas>
+   		<canvas id="germany" width="700" height="600"></canvas>
+   		<canvas id="bateau" width="900" height="1000"></canvas>
+   		<canvas id="bonhomme" width="700" height="600"></canvas>
 
-   <script type="application/x-javascript">
+   		<script type="application/x-javascript">
 
-	var belgium = document.getElementById("belgium");
-	var ctx = belgium.getContext("2d");
+			var belgium = document.getElementById("belgium");
+			var ctx = belgium.getContext("2d");
 
-	ctx.beginPath();
-	ctx.fillStyle = "black";
-	ctx.fillRect(50,50,200,350);
-	ctx.fillStyle = "yellow";
-	ctx.fillRect(250,50,200,350);
-	ctx.fillStyle = "red";
-	ctx.fillRect(450,50,200,350);
-	ctx.closePath();
+			ctx.beginPath();
+			ctx.fillStyle = "black";
+			ctx.fillRect(50,50,200,350);
+			ctx.fillStyle = "yellow";
+			ctx.fillRect(250,50,200,350);
+			ctx.fillStyle = "red";
+			ctx.fillRect(450,50,200,350);
+			ctx.closePath();
 
 
-	var germany = document.getElementById("germany");
-	var ctx2 = germany.getContext("2d");
+			var germany = document.getElementById("germany");
+			var ctx2 = germany.getContext("2d");
 
-	ctx2.beginPath();
-	ctx2.fillStyle = "black";
-	ctx2.fillRect(50,50,550,100);
-	ctx2.fillStyle = "red";
-	ctx2.fillRect(50,150,550,100);
-	ctx2.fillStyle = "yellow";
-	ctx2.fillRect(50,250,550,100);
-	ctx2.closePath();
+			ctx2.beginPath();
+			ctx2.fillStyle = "black";
+			ctx2.fillRect(50,50,550,100);
+			ctx2.fillStyle = "red";
+			ctx2.fillRect(50,150,550,100);
+			ctx2.fillStyle = "yellow";
+			ctx2.fillRect(50,250,550,100);
+			ctx2.closePath();
 
-		
+			
+			var bateau = document.getElementById("bateau");
+			var ctx3 = bateau.getContext("2d");
 
-	</script>
+			ctx3.beginPath();
+			ctx3.fillStyle = "black";
+			ctx3.fillRect(0,0,900,1000);
+			ctx3.strokeStyle = "white";
+			ctx3.moveTo(400,100);
+			ctx3.lineTo(650,300);
+			ctx3.lineTo(400,300);
+			ctx3.lineTo(400,100);
+			ctx3.moveTo(400,300);
+			ctx3.lineTo(400,600);
+			ctx3.lineTo(750,600);
+			ctx3.lineTo(650,800);
+			ctx3.lineTo(200,800);
+			ctx3.lineTo(50,600);
+			ctx3.lineTo(400,600);
+			ctx3.stroke();
+			ctx3.closePath();
 
- </body>
+			var bonhomme = document.getElementById("bonhomme");
+			
+
+		</script>
+
+ 	</body>
 </html>
