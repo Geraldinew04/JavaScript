@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Logo ANDROID</title>
+ </head>
+ 	<body>
+		<canvas id="android" width="700" height="800"></canvas>
+
+			<script type="application/x-javascript">
+				var android = document.getElementById("android");
+				var ctx = android.getContext("2d");
+
+				ctx.beginPath();//tete
+				ctx.arc(350,190,100,0,Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.moveTo(250,190);
+				ctx.lineTo(450,190);
+
+				ctx.beginPath();//bras gauche
+				ctx.arc(210,225,25,0,Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.arc(210,350,25,0,Math.PI,false);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.fillRect(185,225,50,125);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();//bras droit
+				ctx.arc(490,225,25,0,Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.arc(490,350,25,0,Math.PI,false);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.fillRect(465,225,50,125);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();//corps
+				ctx.fillRect(250,205,200,250);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.arc(275,450,25,0.5*Math.PI,1.5*Math.PI,false);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.arc(425,450,25,0.5*Math.PI,1.5*Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();
+				ctx.fillRect(275,450,150,25);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();//jambe gauche
+				ctx.moveTo(300,450);
+				ctx.lineTo(300,575);
+				ctx.lineWidth = 50;
+				ctx.lineCap = "round";
+				ctx.stroke();
+				ctx.closePath();
+
+				ctx.beginPath();//jambe droite
+				ctx.moveTo(400,450);
+				ctx.lineTo(400,575);
+				ctx.lineWidth = 50;
+				ctx.lineCap = "round";
+				ctx.stroke();
+				ctx.closePath();
+				
+				ctx.beginPath();//bras gauche
+				ctx.fillStyle = "white";
+				ctx.arc(300,150,5,0,2*Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();//bras gauche
+				ctx.fillStyle = "white";
+				ctx.arc(400,150,5,0,2*Math.PI,true);
+				ctx.fill();
+				ctx.closePath();
+
+				ctx.beginPath();//antenne gauche
+				ctx.moveTo(300,105);
+				ctx.lineTo(250,50);
+				ctx.lineWidth = 10;
+				ctx.lineCap = "round";
+				ctx.stroke();
+				ctx.closePath();
+
+				ctx.beginPath();//antenne 
+				ctx.moveTo(400,105);
+				ctx.lineTo(450,50);
+				ctx.lineWidth = 10;
+				ctx.lineCap = "round";
+				ctx.stroke();
+				ctx.closePath();
+			</script> 		
+ 	</body>
+</html>
